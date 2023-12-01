@@ -1,7 +1,7 @@
-# AWS-Networking-3-Tier-Architecture
+# AWS-Networking-3-Tier-Architecture Project
 
 ![img]()
-<h1 align="center">Docker Containerized SSH Server and Client Project</h3>
+<h1 align="center">VPC AWS 3 Tier Architecture</h3>
 
 
 
