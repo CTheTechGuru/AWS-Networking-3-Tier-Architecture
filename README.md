@@ -7,11 +7,18 @@
 
 
 <!-- PROJECT Details-->
-## About The Project
+ ## About The Project
 
 
 
 
+ ## Requirements
+
+
+* Basic understanding of Computer Networks
+* Basic understanding of TCP/IP
+* Basic understanding of virtualization
+* Access to AWS (Free Tier or Paid)
 
 
 <!-- Benefits -->
