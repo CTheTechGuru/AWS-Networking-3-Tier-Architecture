@@ -30,22 +30,9 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Access to AWS (Free Tier or Paid)
 * --Best Practice-- Create AWS user account with administrator access.
 
+### Steps
 
-<!-- VPC Design -->
-
-
-## VPC Design
-* 
-* 
-
-*
-* 
-
-* 
-
-# Our first step in this VPC Design is to create our VPC 
-
-## Create VPC
+## 1. Create VPC
 
 * Open the VPC dashboard and on the left column choose Your VPC. 
 * Give your VPC a name tag to identify. 
