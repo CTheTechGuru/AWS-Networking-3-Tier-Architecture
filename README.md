@@ -8,7 +8,7 @@
 
 
 <!-- PROJECT Details-->
- ## About The Project
+ # About The Project
 
 In this project I will go through step by step how to architect a VPC environment consisting of a three tier architecture. 
 This will consist of three layers.
@@ -21,7 +21,7 @@ maintain resilency as well as fault tolerance to handle work loads beyond measur
 This is where the AWS makes it seamless to utilize cloud services on demand, opening up 
 a plethora of options for building secure, highly avaliable, reliabile, and performance efficient applications.  
 
- ## Prerequisites
+ # Prerequisites
 
 
 * Basic understanding of Computer Networks.
