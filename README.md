@@ -30,7 +30,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Access to AWS (Free Tier or Paid)
 * --Best Practice-- Create AWS user account with administrator access.
 
-### Steps
+# Steps
 
 ## 1. Create VPC
 
