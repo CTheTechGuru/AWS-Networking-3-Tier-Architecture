@@ -76,8 +76,13 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Click the drop down and select attatch. 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Attach%20IGW.png?raw=true)
 * Now we will create a routing table and edit routes to add 0.0.0.0/0 as a destination, which will allow us to connect outside of our VPC to the internet.
-![](  
 
+* Now on the left column of the dashboard choose route tables. 
+* Name the routing table and select the VPC you created. 
+![]( https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20Table%20Internet.PNG?raw=true)
+
+* Once the route table is created you will need to select edit the route and add 0.0.0.0/0 to 
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Edit%20Routes.PNG)
 ### Header
 
 1. 
