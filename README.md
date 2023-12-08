@@ -1,8 +1,7 @@
-# AWS-Networking-3-Tier-Architecture Project
-
+<h1 align="center">AWS Networking 3 Tier Architecture Project</h3>
 
 ![img]()
-<h1 align="center">VPC AWS 3 Tier Architecture</h3>
+
 
 
 
