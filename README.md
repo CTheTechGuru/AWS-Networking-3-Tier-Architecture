@@ -50,20 +50,24 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 
 
 
-## Installation Steps
+### 2. Create Subnets
+
+* We will create our subnets now, this is where networking knowledge comes in handy.  
+* Our Cidr is 10.16.0.0/16, we will create a subnet per environment.
+* This is an example of our first subnet.
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Settings.png?raw=true)
+* For high avaliability our architecture will be spread across multiple avaliabiliy zones. 
+*  
 
 
-### Header
 
-1. Go to the VPC dashboard within the AWS comsole. 
-    
-2. 
 
-3.
 
-4.
+ ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Create%20VPC.png?raw=true)
 
-5.
+* When done click create to to build your vpc.  
+* By default a route table, dhcp option set, nacl, and one security group.
+* We will modify these later in the project to enhance security as we add more components. 
 
 ### Header
 
