@@ -50,36 +50,32 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 
 
 
-### 2. Create Subnets
+### 2. Create Subnets - We will create a subnet for 
 
 * We will create our subnets now, this is where networking knowledge comes in handy.  
-* Our Cidr is 10.16.0.0/16, we will create a subnet per environment.
+* Our Cidr is 10.16.0.0/16, we will create a subnet per environment (WEB, APP, DB).
+* On the main VPC dashboard look on the leftr column and choose subnets and create subnets on the next page.
 * This is an example of our first subnet.
 * ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Settings.png?raw=true)
-* For high avaliability our architecture will be spread across multiple avaliabiliy zones. 
+* For high avaliability our architecture will be spread across multiple avaliabiliy zones, create the remainder of subnets.
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnets.png?raw=true)
 *  
 
 
 
 
 
- ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Create%20VPC.png?raw=true)
 
-* When done click create to to build your vpc.  
-* By default a route table, dhcp option set, nacl, and one security group.
-* We will modify these later in the project to enhance security as we add more components. 
 
-### Header
 
-1. 
-    
-2. 
+### 2. Create Internet Gateway and Route Table  
 
-3.
-
-4.
-
-5.
+* In order to gain access to the internet we need to create a an internet gateway and routing table to access the internet.
+* From ther VPC main dashboard on the left column choose internet gateways, name and click create.
+* Now highlight the internet gateway we've created and choose the actions tab above and Attatch to VPC.
+* Click the drop down and select attatch. 
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Attach%20IGW.png?raw=true)
+*  
 
 ### Header
 
