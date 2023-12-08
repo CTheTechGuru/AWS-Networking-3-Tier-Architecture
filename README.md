@@ -32,7 +32,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 
 # Steps
 
-## 1. Create VPC
+### 1. Create VPC
 
 * Open the VPC dashboard and on the left column choose Your VPC. 
 * Give your VPC a name tag to identify. 
