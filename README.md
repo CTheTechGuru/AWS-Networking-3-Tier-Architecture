@@ -44,7 +44,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 
  ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Create%20VPC.png?raw=true)
 
-
+* When done click create to to build your vpc.  
 
 
 
