@@ -43,12 +43,15 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 
 * 
 
+# Our first step in this VPC Design is to create our VPC 
 
-## Prerequisites
+## Create VPC
 
-*
-*
-*
+* Open the VPC dashboard and on the left column choose Your VPC. 
+* Give your VPC a name tag to identify. 
+* Create a CIDR range for your VPC. Mines will be 10.16.0.0/16
+
+ ![]()
 *
 *
 *
@@ -65,7 +68,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 
 ### Header
 
-1. 
+1. Go to the VPC dashboard within the AWS comsole. 
     
 2. 
 
