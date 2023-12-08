@@ -28,7 +28,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Basic understanding of TCP/IP.
 * Basic understanding of virtualization.
 * Access to AWS (Free Tier or Paid)
-* Create AWS user account with administrator access.
+* --Best Practice-- Create AWS user account with administrator access.
 
 
 <!-- VPC Design -->
@@ -50,14 +50,9 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Open the VPC dashboard and on the left column choose Your VPC. 
 * Give your VPC a name tag to identify. 
 * Create a CIDR range for your VPC. Mines will be 10.16.0.0/16
+* This is my VPC settings. 
+ ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Create%20VPC.png?raw=true)
 
- ![]()
-*
-*
-*
-*
-*
-*
 
 
 
