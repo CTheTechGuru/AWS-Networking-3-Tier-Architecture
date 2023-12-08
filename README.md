@@ -45,7 +45,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
  ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Create%20VPC.png?raw=true)
 
 * When done click create to to build your vpc.  
-
+* By default a route table, dhcp option set, nacl, and one security group. We will modify these later in the project to enhance security. 
 
 
 
