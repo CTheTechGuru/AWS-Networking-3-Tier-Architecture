@@ -80,7 +80,8 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Name the routing table and select the VPC you created. 
 ![]( https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20Table%20Internet.PNG?raw=true)
 
-* Once the route table is created you will need to select edit the route and add 0.0.0.0/0 to allow the IGW to have internet access.  
+* Once the route table is created you will need to select edit the route to allow the IGW to have internet access.
+* Destination 0.0.0.0/0 Target IGW(Your Internet Gateway)
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Edit%20Routes.PNG)
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20for%20IG.png?raw=true)
 1. 
