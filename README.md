@@ -98,13 +98,13 @@ Destination   | Target
 * Open the EC2 dashboard choose launch instance.
  ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Launch%20an%20EC2%20Instance.png?raw=true)
 * There are a few settings we will use.
-  1. For Network we will choose out VPC
-  2. For Subnet we will choose our corresponding subnet for the EC2 we are creating.
-  3. Auto Assign IP for our Web tier applications only.(Web1/Web2)
-  4. Default for remaining settings.
-  5. Use the default swecurity group
-  6. Use existing key pair if you have or create new if you do not have one.
-  7. Add Tags to identify instances.   
+1. For Network we will choose out VPC
+2. For Subnet we will choose our corresponding subnet for the EC2 we are creating.
+3. Auto Assign IP for our Web tier applications only.(Web1/Web2)
+4. Default for remaining settings.
+5. Use the default swecurity group
+6. Use existing key pair if you have or create new if you do not have one.
+7. Add Tags to identify instances.   
 
  ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Instance%20settings.png?raw=true)
 
