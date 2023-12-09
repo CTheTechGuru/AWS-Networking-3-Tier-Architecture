@@ -7,7 +7,7 @@
 
 
 <!-- PROJECT Details-->
- <h1 align="center"> About The Project</h>
+ <h1 align="center"> About The Project<h>
 
 In this project I will go through step by step how to architect a VPC environment consisting of a three tier architecture. 
 This will consist of three layers.
