@@ -81,10 +81,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 ![]( https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20Table%20Internet.PNG?raw=true)
 
 * Once the route table is created you will need to select edit the route to allow the IGW to have internet access.
-*  0.0.0.0/0 
-   | Target
-------------- | -------------
-0.0.0.0/0  | Target IGW(Your Internet Gateway)l
+
 
 Destination   | Target 
 ------------- | -------------
