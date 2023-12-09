@@ -127,15 +127,19 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Putty.PNG)
 
 * Next load the .ppk file from earlier in the EC2 creation process.
-* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Putty%202.png)
-* 
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Putty%202.png)
+  
 
 * Set the Saved sessions name to AWS Bastion Host, choose load.
 * In Putty check open, now you will be connected to the bastion host.
-* In order to access the DB or APP instance from the bastion host we will have to load our ssh key to pass through pageant. At the bottom right near hidden icons we will right click the arrow. Next we will right click and choose add key. Here we will add the key from out .ppk file. 
-![Bastion Host]()https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Connection.png?raw=true
 
 
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Connection.png?raw=true)
+
+* In order to access the DB or APP instance from the bastion host we will have to load our ssh key to pass through pageant.
+* At the bottom right near hidden icons we will right click the arrow. Next we will right click and choose add key. Here we will add the key from out .ppk file.
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Puttygen.png?raw=true)
 
 
 
