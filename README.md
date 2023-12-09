@@ -90,9 +90,12 @@ Destination   | Target
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Edit%20Routes.PNG)
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20for%20IG.png?raw=true)
-1. 
-    
-2. 
+
+* Our Web Apps now must be associated with the route table we've created to allow internet access to our VPC.                                                      
+* We can achieve this by choosing route tables, subnet associations and edit subnet asscoations.
+* I will choose Web1 and Web2 which utilize public subnets. 
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Associations.png?raw=true)
+
 
 3.
 
