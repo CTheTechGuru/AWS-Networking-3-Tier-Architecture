@@ -27,9 +27,9 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Basic understanding of TCP/IP.
 * Basic understanding of virtualization.
 * Access to AWS (Free Tier or Paid)
-* --Best Practice-- Create AWS user account with administrator access.
+* _Best Practice_ Create AWS user account with administrator access.
 
-# Steps
+# Steps - Create VPC | Subnets | Route Table | IGW
 
 ### 1. Create VPC
 
@@ -60,13 +60,6 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnets.png?raw=true)
   
 
-
-
-
-
-
-
-
 ### 3. Create Internet Gateway and Route Table  
 
 * In order to gain access to the internet we need to create a an internet gateway and routing table to access the internet.
@@ -93,7 +86,8 @@ Destination   | Target
 
 * Our Web Apps now must be associated with the route table we've created to allow internet access to our VPC.                                                      
 * We can achieve this by choosing route tables, subnet associations and edit subnet asscoations.
-* I will choose Web1 and Web2 which utilize public subnets. 
+* I will choose Web1 and Web2 which has public subnets.
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Associations.png?raw=true)
 
 
@@ -103,7 +97,7 @@ Destination   | Target
 
 5.
 
-### Header
+
 
 1. 
     
