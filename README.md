@@ -29,7 +29,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Access to AWS (Free Tier or Paid)
 * _Best Practice_ Create AWS user account with administrator access.
 
-# Steps - Create VPC | Subnets | Route Table | IGW
+# Steps - ####Create VPC | Subnets | Route Table | IGW
 
 ### 1. Create VPC
 
