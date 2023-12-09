@@ -28,6 +28,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Basic understanding of virtualization.
 * Access to AWS (Free Tier or Paid)
 * _Best Practice_ Create AWS user account with administrator access.
+* Download Putty and Puttygen
 
 ##  Create VPC | Subnets | Route Table | IGW
 
@@ -110,19 +111,37 @@ Destination   | Target
 
  
 
-5.
+
+##  Create Bastion Host 
 
 
 
-1. 
-    
-2. 
+* First will create a EC2 instance that will be our bastion host. This EC2 will be in the same subnet as our Web server. We will auto assign a public IP as well. 
+* There are a few settings we will use.
+* Next will create a SG for the bastion host. We Will Only Allow SSH from 0.0.0.0/0
 
-3.
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20SSH.PNG?raw=true)
 
-4.
+* Now we will use putty to connect to our bastion host which is the first step to accessing our private subnets.
+* In host name place ec2-user@(bastion host public ip addr)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Putty.PNG)
 
-5.
+* Next load the .ppk file from earlier in the EC2 creation process.
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Putty%202.png)
+* 
+
+* Set the Saved sessions name to AWS Bastion Host, choose load.
+* In Putty check open, now you will be connected to the bastion host.
+* In order to access the DB or APP instance from the bastion host we will have to load our ssh key to pass through pageant. At the bottom right near hidden icons we will right click the arrow. Next we will right click and choose add key. Here we will add the key from out .ppk file. 
+![Bastion Host]()https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Connection.png?raw=true
+
+
+
+
+
+
+
+
 
 <!-- CONTACT -->
 ## Contact
