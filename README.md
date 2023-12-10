@@ -11,14 +11,14 @@
 
 In this project I will go through step by step how to architect a VPC environment consisting of a three tier architecture. 
 This will consist of three layers.
-1. Web Tier - Presentation also the UI of our users to access our applciation (ex: www.amazon.com) 
+1. Web Tier - Presentation also the UI of our users to access our application (ex: www.amazon.com) 
 2. Application Tier - Backend aka logic layer. This layer is acts as the medium between to two Web and database layer.(user requests and data storing) 
 3. Database Tier - Responsible for storing, managing, and retrieving information. ( DynamoDB, NoSQL, AmazonRDS, MySQL )
 
-With the current state of technology and its fast paced evoloution, businesses strive to 
-maintain resilency as well as fault tolerance to handle work loads beyond measure. 
+With the current state of technology and its fast paced evolution, businesses strive to 
+maintain resiliency as well as fault tolerance to handle work loads beyond measure. 
 This is where the AWS makes it seamless to utilize cloud services on demand, opening up 
-a plethora of options for building secure, highly avaliable, reliabile, and performance efficient applications.  
+a plethora of options for building secure, highly available, reliable, and performance efficient applications.  
 
  # Prerequisites
 
@@ -28,7 +28,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Basic understanding of virtualization.
 * Access to AWS (Free Tier or Paid)
 * _Best Practice_ Create AWS user account with administrator access.
-* Download Putty and Puttygen
+* Download Putty and Pageant
 
 ##  Create VPC | Subnets | Route Table | IGW
 
@@ -59,7 +59,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
   
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Settings.png?raw=true)
 
-* For high avaliability our architecture will be spread across multiple avaliabiliy zones, create the remainder of subnets.
+* For high availability our architecture will be spread across multiple availability zones, create the remainder of subnets.
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnets.png?raw=true)
   
@@ -67,9 +67,9 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 ### 3. Create Internet Gateway and Route Table  
 
 * In order to gain access to the internet we need to create a an internet gateway and routing table to access the internet.
-* From ther VPC main dashboard on the left column choose internet gateways, name and click create.
-* Now highlight the internet gateway we've created and choose the actions tab above and Attatch to VPC.
-* Click the drop down and select attatch.
+* From there VPC main dashboard on the left column choose internet gateways, name and click create.
+* Now highlight the internet gateway we've created and choose the actions tab above and Attach to VPC.
+* Click the drop down and select attach.
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Attach%20IGW.png?raw=true)
 
@@ -92,7 +92,7 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20for%20IG.png?raw=true)
 
 * Our Web Apps now must be associated with the route table we've created to allow internet access to our VPC.                                                      
-* We can achieve this by choosing route tables, subnet associations and edit subnet asscoations.
+* We can achieve this by choosing route tables, subnet associations and edit subnet associations.
 * I will choose Web1 and Web2 which has public subnets.
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Associations.png?raw=true)
@@ -121,7 +121,7 @@ Destination   | Target
 
  
 ## 5. Create Security Group with SSH Inbound & Outbound Rules  
-* Go to the VPC dashboard and scroll untill you see security groups.
+* Go to the VPC dashboard and scroll until you see security groups.
 * Choose Create Security Groups to correspond with the image below
 * Inbound Rules - HTTP, HTTPS, SSH Custom 0.0.0.0/0) Outbound All Traffic 0.0.0.0/0
 
@@ -141,7 +141,7 @@ Destination   | Target
 
 1. Why we need a bastion host? We use the bastion host to allow us to connect to our private subnets which do not have internet access.
 
-* This is a security practice that ensures Databases and other critical infrastructure is secured, Upholding confidentiality, integrity and avaliability. 
+* This is a security practice that ensures Databases and other critical infrastructure is secured, Upholding confidentiality, integrity and availability. 
 
 * First will create a EC2 instance that will be our bastion host. This EC2 will be in the same subnet as our Web server. We will auto assign a public IP as well. 
 * These settings should be very similar to the WEB1 EC2 Instance.
