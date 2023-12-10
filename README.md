@@ -95,9 +95,9 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Associations.png?raw=true)
 
 
-##  Create EC2 Instances 
+## 4. Create EC2 Instances 
 
-### 1. Create EC2 Instance
+###  Create EC2 Instance
 
 * Open the EC2 dashboard choose launch instance.
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Launch%20an%20EC2%20Instance.png?raw=true)
@@ -115,7 +115,7 @@ Destination   | Target
  
 
  
-##  Create Security Group with SSH Inbound & Outbound Rules  
+## 5. Create Security Group with SSH Inbound & Outbound Rules  
 * Go to the VPC dashboard and scroll untill you see security groups.
 * Choose Create Security Groups to correspond with the image below
 * Inbound Rules - HTTP, HTTPS, SSH Custom 0.0.0.0/0) Outbound All Traffic 0.0.0.0/0
@@ -132,7 +132,7 @@ Destination   | Target
 
 
 
-##  Create Bastion Host & Setup Security Groups
+## 6.  Create Bastion Host & Setup Security Groups
 
 1. Why we need a bastion host? We use the bastion host to allow us to connect to our private subnets which do not have internet access.
 
@@ -151,7 +151,7 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
 
-## Enable SSH on DB instance security group
+## 7. Create Security Group SSH Access DB1
  
  * For us to access the DB, we need to setup an AllowSSH Security Group for our Database to allow a connection from our Bastion host. 
  * Because our DB is in a private subnet, we have to access through SSH which keeps our data secure within our well architected framework.
@@ -159,38 +159,42 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
 
+## 8. Configure Putty and Pageant to access the DB from out Bastion Host
+
+* Open Putty and enter the public ip of the bastion host in the host name field.
+* Choose SSH port 22 for connection type
+* On the left column under connection choose SSH/Auth.
+* Find your .ppk key file from earlier during the creation of your account.
+* Go back under "Session" Saved Sessions name enter AWS Bastion Host and hit save.
+* Your putty session should resemble below.
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Bastion%20Host%20Putty%20Login.PNG?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/PuttyAgent.PNG?raw=true)
+
+* To pass our key into the ssh session we are attempting to establish with the DB1 Server. We will need to use Pageant.
+* Open Pageant, select add key. Choose the .ppk key file.
+
+
   
  
+## 9. Connect To DB1 from our Bastion Host
+
+* Open Putty, choose the AWS Bastion Host profile saved in the previous step, select load.
  
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Logged%20into%20bastion%20host.PNG?raw=true)
+
+* We are now logged into the bastion host.
+* Now to log into the DB, enter ssh@(Private-Ip-Of-D)
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/DB%20Connection.PNG)
+
+* We've established a connection to the DB. 
 
 
 
 
 
 
-
-
-
-
-
-* Now we will use putty to connect to our bastion host which is the first step to accessing our private subnets.
-* In host name place ec2-user@(bastion host public ip addr)
-![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Putty.PNG)
-
-* Next load the .ppk file from earlier in the EC2 creation process.
-![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Putty%202.png)
-  
-
-* Set the Saved sessions name to AWS Bastion Host, choose load.
-* In Putty check open, now you will be connected to the bastion host.
-
-
-![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Connection.png?raw=true)
-
-* In order to access the DB or APP instance from the bastion host we will have to load our ssh key to pass through pageant.
-* At the bottom right near hidden icons we will right click the arrow. Next we will right click and choose add key. Here we will add the key from out .ppk file.
-
-![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Puttygen.png?raw=true)
 
 
 
