@@ -1,6 +1,6 @@
 <h1 align="center">AWS Networking 3 Tier Architecture Project</h3>
 
-![img]()
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/C%20Diagram%20-%20Page%201(1).png?raw=true)
 
 
 
