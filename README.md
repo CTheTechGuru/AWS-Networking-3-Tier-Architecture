@@ -56,7 +56,7 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Our Cidr is 10.16.0.0/16, we will create a subnet per environment (WEB, APP, DB).
 * On the main VPC dashboard look on the leftr column and choose subnets and create subnets on the next page.
 * This is an example of our first subnet.
-  ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Settings.png?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Settings.png?raw=true)
 * For high avaliability our architecture will be spread across multiple avaliabiliy zones, create the remainder of subnets.
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnets.png?raw=true)
   
@@ -112,7 +112,7 @@ Destination   | Target
  
 
  
-##  Create Security Group with SSH Inbound Rules & 
+##  Create Security Group with SSH Inbound & Outbound Rules  
 * Go to the VPC dashboard and scroll untill you see security groups.
 * Choose Create Security Groups to correspond with the image below
 * Inbound Rules - HTTP, HTTPS, SSH Custom 0.0.0.0/0) Outbound All Traffic 0.0.0.0/0
@@ -129,7 +129,7 @@ Destination   | Target
 
 
 
-##  Create Bastion Host 
+##  Create Bastion Host & Setup Security Groups
 
 1. Why we need a bastion host? We use the bastion host to allow us to connect to our private subnets which do not have internet access.
 
@@ -137,7 +137,7 @@ Destination   | Target
 
 * First will create a EC2 instance that will be our bastion host. This EC2 will be in the same subnet as our Web server. We will auto assign a public IP as well. 
 * These settings should be very similar to the WEB1 EC2 Instance.
-* 
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Bastion%20Host.PNG?raw=true)
 
 * Next create a SG for the bastion host. We Will Only Allow SSH from 0.0.0.0/0
@@ -147,7 +147,23 @@ Destination   | Target
 * Now from the EC2 dashboard and attach the SG you just made to the bastion host instance.
 * ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
 * ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
+
+## Enable SSH on DB instance security group
  
+ * For us to access the DB, we need to setup an AllowSSH Security Group for our Database to allow a connection from our Bastion host. 
+ * Because our DB is in a private subnet, we have to access through SSH which keeps our data secure within our well architected framework.
+ 
+ 
+
+
+
+
+
+
+
+
+
+
 
 * Now we will use putty to connect to our bastion host which is the first step to accessing our private subnets.
 * In host name place ec2-user@(bastion host public ip addr)
