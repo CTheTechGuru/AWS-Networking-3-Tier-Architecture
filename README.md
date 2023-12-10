@@ -103,13 +103,30 @@ Destination   | Target
 2. For Subnet we will choose our corresponding subnet for the EC2 we are creating.
 3. Auto Assign IP for our Web tier applications only.(Web1/Web2)
 4. Default for remaining settings.
-5. Use the default swecurity group
-6. Use existing key pair if you have or create new if you do not have one.
+5. Use the default security group ( We will create a SG for our WEB1 App to enable SSH)
+6. Use existing key pair if you have or create new if you do not have one. _.PPK_
 7. Add Tags to identify instances.   
 
  ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Instance%20settings.png?raw=true)
 
  
+
+ 
+##  Create Security Group with SSH Inbound Rules & 
+* Go to the VPC dashboard and scroll untill you see security groups.
+* Choose Create Security Groups to correspond with the image below
+* Inbound Rules - HTTP, HTTPS, SSH Custom 0.0.0.0/0) Outbound All Traffic 0.0.0.0/0
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SSH%20SG%20Create.PNG?raw=true)
+
+* Now go to the EC2 dashboard and highlight the WEB1 EC2 Instance, click the actions drop down, then security, security groups.
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SSH%20Security%20Group.PNG?raw=true) 
+
+*Remove the default and add the SSH SG one created. 
+
+
+
 
 
 ##  Create Bastion Host 
