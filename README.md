@@ -123,7 +123,7 @@ Destination   | Target
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SSH%20Security%20Group.PNG?raw=true) 
 
-*Remove the default and add the SSH SG one created. 
+* Remove the default and add the SSH SG one created. 
 
 
 
@@ -132,17 +132,22 @@ Destination   | Target
 ##  Create Bastion Host 
 
 1. Why we need a bastion host? We use the bastion host to allow us to connect to our private subnets which do not have internet access.
+
 * This is a security practice that ensures Databases and other critical infrastructure is secured, Upholding confidentiality, integrity and avaliability. 
 
 * First will create a EC2 instance that will be our bastion host. This EC2 will be in the same subnet as our Web server. We will auto assign a public IP as well. 
 * These settings should be very similar to the WEB1 EC2 Instance.
-* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Bastion%20Host.PNG?raw=true)
 * 
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Bastion%20Host.PNG?raw=true)
+
 * Next create a SG for the bastion host. We Will Only Allow SSH from 0.0.0.0/0
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20BH.PNG)
 
-![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20SSH.PNG?raw=true)
+* Now from the EC2 dashboard and attach the SG you just made to the bastion host instance.
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
+ 
 
 * Now we will use putty to connect to our bastion host which is the first step to accessing our private subnets.
 * In host name place ec2-user@(bastion host public ip addr)
