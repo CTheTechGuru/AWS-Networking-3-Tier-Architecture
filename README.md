@@ -69,12 +69,15 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * In order to gain access to the internet we need to create a an internet gateway and routing table to access the internet.
 * From ther VPC main dashboard on the left column choose internet gateways, name and click create.
 * Now highlight the internet gateway we've created and choose the actions tab above and Attatch to VPC.
-* Click the drop down and select attatch. 
+* Click the drop down and select attatch.
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Attach%20IGW.png?raw=true)
+
 * Now we will create a routing table and edit routes to add 0.0.0.0/0 as a destination, which will allow us to connect outside of our VPC to the internet.
 
 * Now on the left column of the dashboard choose route tables. 
-* Name the routing table and select the VPC you created. 
+* Name the routing table and select the VPC you created.
+* 
 ![]( https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Route%20Table%20Internet.PNG?raw=true)
 
 * Once the route table is created you will need to select edit the route to allow the IGW to have internet access.
@@ -100,7 +103,9 @@ Destination   | Target
 ###  Create EC2 Instance
 
 * Open the EC2 dashboard choose launch instance.
+  
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Launch%20an%20EC2%20Instance.png?raw=true)
+
 * There are a few settings we will use.
 1. For Network we will choose out VPC
 2. For Subnet we will choose our corresponding subnet for the EC2 we are creating.
