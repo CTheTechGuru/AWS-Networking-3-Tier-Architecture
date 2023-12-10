@@ -153,7 +153,9 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20BH.PNG)
 
 * Now from the EC2 dashboard and attach the SG you just made to the bastion host instance.
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
 
 ## 7. Create Security Group SSH Access DB1
@@ -162,6 +164,7 @@ Destination   | Target
  * Because our DB is in a private subnet, we have to access through SSH which keeps our data secure within our well architected framework.
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
 
 ## 8. Configure Putty and Pageant to access the DB from out Bastion Host
