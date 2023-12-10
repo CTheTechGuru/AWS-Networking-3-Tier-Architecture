@@ -184,7 +184,7 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Logged%20into%20bastion%20host.PNG?raw=true)
 
 * We are now logged into the bastion host.
-* Now to log into the DB, enter ssh@(Private-Ip-Of-D)
+* Now to log into the DB, enter ssh (Private-Ip-Of-D)
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/DB%20Connection.PNG)
 
