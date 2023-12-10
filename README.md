@@ -56,8 +56,11 @@ a plethora of options for building secure, highly avaliable, reliabile, and perf
 * Our Cidr is 10.16.0.0/16, we will create a subnet per environment (WEB, APP, DB).
 * On the main VPC dashboard look on the leftr column and choose subnets and create subnets on the next page.
 * This is an example of our first subnet.
+  
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnet%20Settings.png?raw=true)
+
 * For high avaliability our architecture will be spread across multiple avaliabiliy zones, create the remainder of subnets.
+
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Subnets.png?raw=true)
   
 
