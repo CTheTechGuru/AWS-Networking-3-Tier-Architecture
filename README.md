@@ -97,7 +97,7 @@ Destination   | Target
 ### 1. Create EC2 Instance
 
 * Open the EC2 dashboard choose launch instance.
- ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Launch%20an%20EC2%20Instance.png?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Launch%20an%20EC2%20Instance.png?raw=true)
 * There are a few settings we will use.
 1. For Network we will choose out VPC
 2. For Subnet we will choose our corresponding subnet for the EC2 we are creating.
@@ -107,7 +107,7 @@ Destination   | Target
 6. Use existing key pair if you have or create new if you do not have one. _.PPK_
 7. Add Tags to identify instances.   
 
- ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Instance%20settings.png?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Instance%20settings.png?raw=true)
 
  
 
@@ -145,13 +145,18 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20BH.PNG)
 
 * Now from the EC2 dashboard and attach the SG you just made to the bastion host instance.
-* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
-* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
 
 ## Enable SSH on DB instance security group
  
  * For us to access the DB, we need to setup an AllowSSH Security Group for our Database to allow a connection from our Bastion host. 
  * Because our DB is in a private subnet, we have to access through SSH which keeps our data secure within our well architected framework.
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/BH%20Instance%20SG.PNG?raw=true)
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Change%20SG.PNG?raw=true)
+
+  
  
  
 
