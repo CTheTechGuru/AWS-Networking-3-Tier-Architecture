@@ -131,11 +131,16 @@ Destination   | Target
 
 ##  Create Bastion Host 
 
-
+1. Why we need a bastion host? We use the bastion host to allow us to connect to our private subnets which do not have internet access.
+* This is a security practice that ensures Databases and other critical infrastructure is secured, Upholding confidentiality, integrity and avaliability. 
 
 * First will create a EC2 instance that will be our bastion host. This EC2 will be in the same subnet as our Web server. We will auto assign a public IP as well. 
-* There are a few settings we will use.
-* Next will create a SG for the bastion host. We Will Only Allow SSH from 0.0.0.0/0
+* These settings should be very similar to the WEB1 EC2 Instance.
+* ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Bastion%20Host.PNG?raw=true)
+* 
+* Next create a SG for the bastion host. We Will Only Allow SSH from 0.0.0.0/0
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20BH.PNG)
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/SG%20SSH.PNG?raw=true)
 
