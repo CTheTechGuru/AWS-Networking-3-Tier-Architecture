@@ -27,7 +27,7 @@ a plethora of options for building secure, highly available, reliable, and perfo
 * Basic understanding of TCP/IP.
 * Basic understanding of virtualization.
 * Access to AWS (Free Tier or Paid)
-* _Best Practice_ Create AWS user account with administrator access.(MFA)
+* _Best Practice_ Create AWS user account with administrator access.(enable MFA on account)
 * Download Putty and Pageant
 
 ##  Create VPC | Subnets | Route Table | IGW
