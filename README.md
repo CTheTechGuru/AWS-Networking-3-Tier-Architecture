@@ -209,7 +209,7 @@ Destination   | Target
 * Create a New Elastic IP and Create NAT Gateway.
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/NAT%20GW.png?raw=true)
 
-* We want for our DB to have access to download patches to stay up to date which it why we need internet access.
+* We want for our DB to have access to download patches to stay up to date which why we need internet access.
 * We need to create a new route table to allow the NAT gateway to have a route to the internet. 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/NAT%20GW2.PNG)
 
