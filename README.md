@@ -201,7 +201,24 @@ Destination   | Target
 
 
 
+ 
+## 10. Implement NAT Gateway to provide Internet Access to the EC2 Instances in Private Subnets. 
 
+* In the VPC dashboard choose NAT Gateway and Create.
+* Attach the public subnet for Web1.
+* Create a New Elastic IP and Create NAT Gateway.
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/NAT%20GW.png?raw=true)
+
+* We want for our DB to have access to download patches to stay up to date which it why we need internet access.
+* We need to create a new route table to allow the NAT gateway to have a route to the internet. 
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/NAT%20GW2.PNG)
+
+* Next change the route table of DB1 to the NAT Gateway route table.
+ ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/NAT%20Route%20Table%20Association.PNG)
+
+* To test we will run a ping.
+
+![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/DB%20Access%20Through%20NAT%20Gateway.PNG?raw=true)
 
 
 
@@ -215,7 +232,7 @@ Destination   | Target
 
 Cordelra Lowman - Cordelra_Lowman@yahoo.com
 
-Project Link: (https://github.com/CTheTechGuru/Docker-Projects/tree/main/SSH%20Server%20%7C%20Client%20Project%20))
+Project Link: 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
