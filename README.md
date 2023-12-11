@@ -192,7 +192,7 @@ Destination   | Target
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/Logged%20into%20bastion%20host.PNG?raw=true)
 
 * We are now logged into the bastion host.
-* Now to log into the DB, enter ssh (Private-Ip-Of-D)
+* Now to log into the DB, enter ssh (Private-Ip-Of-BH)
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/DB%20Connection.PNG)
 
@@ -226,7 +226,7 @@ Destination   | Target
 
 * We created a VPC and created 6 subnets, route table, and internet gateway for internet access.
 * Provisioned EC2 instances for Web, App, and DB Tiers. 
-* Configuredsecurity group inbound outbound rules to allow SSH. 
+* Configured security group inbound outbound rules to allow SSH. 
 * Setup a Bastion Host Instance with SSH only access in a public subnet.
 * Configured DB instance security group to allow inbound SSH from bastion host. 
 * Configured Putty to allow SSH connections to our instances.
@@ -235,7 +235,7 @@ Destination   | Target
 * Configured NAT Gateway to allow internet access to private subnets.
 
 This concludes the project, of course that are many architectural designs. 
-My emphasis on this project was more focused on the networking componenets in 
+My emphasis on this project was more focused on the networking components in 
 AWS and how to maintain a secure environment within the console. 
 
 
