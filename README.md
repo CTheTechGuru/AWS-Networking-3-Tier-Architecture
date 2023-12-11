@@ -50,7 +50,7 @@ a plethora of options for building secure, highly available, reliable, and perfo
 
 
 
-### 2. Create Subnets - We will create a subnet for 
+### 2. Create Subnets - We will create a subnets for our different instances
 
 * We will create our subnets now, this is where networking knowledge comes in handy.  
 * Our Cidr is 10.16.0.0/16, we will create a subnet per environment (WEB, APP, DB).
@@ -223,6 +223,20 @@ Destination   | Target
 * This allows the DB tier to access the internet through the nat gateway and update patches when needed without a public ip.
 
 <h1 align="center">Summary</h3>
+
+* We created a VPC and created 6 subnets, route table, and internet gateway for internet access.
+* Provisioned EC2 instances for Web, App, and DB Tiers. 
+* Configuredsecurity group inbound outbound rules to allow SSH. 
+* Setup a Bastion Host Instance with SSH only access in a public subnet.
+* Configured DB instance security group to allow inbound SSH from bastion host. 
+* Configured Putty to allow SSH connections to our instances.
+* Added Key to Peagent for session use when connecting to DB instance from bastion host. 
+* Connected to DB Instance from Bastion Host.
+* Configured NAT Gateway to allow internet access to private subnets.
+
+This concludes the project, of course that are many architectural designs. 
+My emphasis on this project was more focused on the networking componenets in 
+AWS and how to maintain a secure environment within the console. 
 
 
 
