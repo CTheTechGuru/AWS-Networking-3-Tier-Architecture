@@ -27,7 +27,7 @@ a plethora of options for building secure, highly available, reliable, and perfo
 * Basic understanding of TCP/IP.
 * Basic understanding of virtualization.
 * Access to AWS (Free Tier or Paid)
-* _Best Practice_ Create AWS user account with administrator access.(enable MFA on account)
+* _Best Practice_ Create AWS user account with administrator access.(enable MFA on lab account)
 * Download Putty and Pageant
 
 ##  Create VPC | Subnets | Route Table | IGW
@@ -232,9 +232,10 @@ Destination   | Target
 
 Cordelra Lowman - Cordelra_Lowman@yahoo.com
 
-Project Link: 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<h3 align="left">Follow me on Linkedin:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/cordelra lowman" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="cordelra lowman" height="30" width="40" /></a>
+</p>
 
 
 
