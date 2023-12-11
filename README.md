@@ -220,6 +220,7 @@ Destination   | Target
 
 ![](https://github.com/CTheTechGuru/AWS-Networking-3-Tier-Architecture/blob/main/images/DB%20Access%20Through%20NAT%20Gateway.PNG?raw=true)
 
+* This allows the DB tier to access the internet through the nat gateway and update patches when needed without a public ip.
 
 <h1 align="center">Summary</h3>
 
