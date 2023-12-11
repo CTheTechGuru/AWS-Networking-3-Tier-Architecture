@@ -21,6 +21,7 @@ The foundational components of our AWS environment have been meticulously config
 
 In the face of potential failures, our architecture remains resilient. Multiple Availability Zones (AZs) have been strategically employed to distribute resources, mitigating the impact of localized disruptions. Load balancing mechanisms enhance fault tolerance and ensure optimal resource utilization, guaranteeing a consistent user experience even during peak loads.
 
+### Tier Details:
 1. Web Tier - Presentation also the UI of our users to access our application (ex: www.amazon.com) 
 2. Application Tier - Backend aka logic layer. This layer is acts as the medium between to two Web and database layer.(user requests and data storing) 
 3. Database Tier - Responsible for storing, managing, and retrieving information. ( DynamoDB, NoSQL, AmazonRDS, MySQL )
