@@ -10,14 +10,14 @@
 # About The Project
 In the ever-evolving landscape of cloud computing, crafting a robust and scalable architecture is paramount to the success of modern applications. This project embarks on a journey to construct a resilient 3-tier architecture on Amazon Web Services (AWS), employing best practices to ensure optimal performance, reliability, and security.
 
-####Overview:
+#### Overview:
 This AWS project is structured around the fundamental principles of three-tier architecture, dividing the application into distinct layers – the Web Tier, Application Tier, and Database Tier. Each layer plays a pivotal role in delivering a seamless and efficient user experience, and the design ensures a high level of fault tolerance and scalability.
 
-####Infrastructure Setup:
+#### Infrastructure Setup:
 
 The foundational components of our AWS environment have been meticulously configured. A Virtual Private Cloud (VPC) forms the backbone, providing a secure and isolated space for our architecture. Internet Gateways facilitate external communication, while carefully crafted Route Tables ensure efficient traffic flow. Network Address Translation (NAT) Gateways add an extra layer of security, allowing our private instances to access the internet while maintaining a secure posture.
 
-####Resilient Design:
+#### Resilient Design:
 
 In the face of potential failures, our architecture remains resilient. Multiple Availability Zones (AZs) have been strategically employed to distribute resources, mitigating the impact of localized disruptions. Load balancing mechanisms enhance fault tolerance and ensure optimal resource utilization, guaranteeing a consistent user experience even during peak loads.
 
